@@ -1,0 +1,14 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# Reference: https://github.com/PowerShell/PowerShell/blob/master/docs/building/windows-core.md
+properties:
+  resources:
+    - resource: Microsoft.PowerShell.DSC
+      directives:
+        description: Cortana (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9NFFX4SZZ23L"
+        source: msstore
+        ensure: absent
+      
+  configurationVersion: 0.2.0

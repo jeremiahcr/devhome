@@ -15,9 +15,25 @@ properties:
         description: News (Removal)
         allowPrerelease: true
       settings:
-        id: "9WZDNCRFHVF"
+        id: "9WZDNCRFHV"
         source: msstore
         ensure: absent
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Microsoft News (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9WZDNCRFHVFW"
+        source: msstore
+        ensure: absent
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: News CLI (Removal)
+        allowPrerelease: true
+      settings:
+        id: Atticus64.news
+        source: winget
+        ensure: absent                
     - resource: Microsoft.WinGet.DSC/WinGetPackage
       directives:
         description: News & Weather (Removal)
@@ -42,4 +58,36 @@ properties:
         id: "9WZDNCRFJ364"
         source: msstore
         ensure: absent
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Xbox Accessories (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9NBLGGH30XJ3"
+        source: msstore
+        ensure: absent       
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Hardwood Solitaire Hub (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9NBLGGH4T2XD"
+        source: msstore
+        ensure: absent 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Triangle Peg Solitaire (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9P5JVF7M3CTR"
+        source: msstore
+        ensure: absent 
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Spotify (Removal)
+        allowPrerelease: true
+      settings:
+        id: Spotify.Spotify
+        source: 
+        ensure: absent                 
   configurationVersion: 0.2.0
