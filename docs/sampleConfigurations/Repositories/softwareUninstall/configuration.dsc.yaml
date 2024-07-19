@@ -1,0 +1,45 @@
+# yaml-language-server: $schema=https://aka.ms/configuration-dsc-schema/0.2
+# Reference: https://github.com/PowerShell/PowerShell/blob/master/docs/building/windows-core.md
+properties:
+  resources:
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Cortana (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9NFFX4SZZ23L"
+        source: msstore
+        ensure: absent
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: News (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9WZDNCRFHVF"
+        source: msstore
+        ensure: absent
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: News & Weather (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9WZDNCRFJ3Q2"
+        source: msstore
+        ensure: absent            
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Movies & TV (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9WZDNCRFJ3P2"
+        source: msstore
+        ensure: absent
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      directives:
+        description: Skype (Removal)
+        allowPrerelease: true
+      settings:
+        id: "9WZDNCRFJ364"
+        source: msstore
+        ensure: absent
+  configurationVersion: 0.2.0
